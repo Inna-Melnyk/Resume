@@ -82,7 +82,6 @@ hr {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  width: 500px;
 }
 
 /* Projects */
@@ -160,7 +159,6 @@ hr {
 .work-list {
   padding: 0;
   margin-left: 20px;
-  width: 500px;
 }
 .work-list-item {
   font-style: normal;
@@ -257,6 +255,14 @@ aside {
   font-size: 14px;
   line-height: 24px;
   color: #a3a3a3;
+}
+.contact-link-extra{
+    font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 5px;
+  color: antiquewhite;
 }
 hr {
   border: 0;
