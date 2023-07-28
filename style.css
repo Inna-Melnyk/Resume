@@ -2,7 +2,7 @@
 .main_side {
   display: flex;
   flex-direction: row-reverse;
-  width: 1240px;
+  width: 100%;
   margin: 0 auto;
 }
 body {
@@ -49,8 +49,8 @@ hr {
 .Main-content-style {
   background-color: #ffffff;
   box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
-  padding: 105px 80px;
-  width: 700px;
+  padding: 90px 46px;
+  width: 80%;
 }
 
 /* About user */
@@ -62,7 +62,7 @@ hr {
 .style_about_job {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 17px;
   color: #000000;
   margin-bottom: -15px;
@@ -71,7 +71,7 @@ hr {
 .style_name {
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 68px;
   line-height: 55px;
   color: #fb6d3a;
   margin-bottom: 25px;
@@ -79,12 +79,19 @@ hr {
 .about-description {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   color: #595959;
 }
 
 /* Projects */
+
+.project-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
 
 .Projects_style {
     margin-bottom: 40px;
@@ -105,9 +112,17 @@ hr {
 
 .project-link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #fb6d3a;
+}
+.github-link {
+color: #000;
+}
+
+.project-details {
+  margin: 0;
+  padding: 0;
 }
 
 /* Work  */
@@ -118,16 +133,16 @@ hr {
 .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 27px;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .work-position {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: #000000;
   margin-bottom: 10px;
@@ -136,14 +151,14 @@ hr {
 .work-company {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: #fb6d3a;
 }
 .work-terms {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
   color: #a8a8a8;
   margin-bottom: 10px;
@@ -152,9 +167,9 @@ hr {
 .line {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
-  color: #000000;
+  color: #a8a8a8;
 }
 .work-list {
   padding: 0;
@@ -170,7 +185,7 @@ hr {
 .work-description {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #595959;
 }
@@ -183,7 +198,7 @@ hr {
 .university {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: #fb6d3a;
   margin-bottom: 10px;
@@ -191,14 +206,14 @@ hr {
 .uni-link {
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: #fb6d3a;
 }
 .degree {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   color: #000000;
   margin-bottom: 10px;
@@ -206,7 +221,7 @@ hr {
 .study-terms {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 15px;
   color: #a8a8a8;
 }
@@ -218,20 +233,33 @@ aside {
 .Sidebar {
   background-color: #1e2939;
   color: antiquewhite;
-  padding-top: 40px;
-  width: 370px;
+  padding-top: 80px;
+  width: 40%;
+}
+.photo-wrapper {
+  padding: 0 20%;
 }
 .photo_size {
-  width: 370px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+border-radius: 12%;
+
 }
 
 /*Contacs*/
 .Contacts,
 .tech-skills,
-.soft-skills {
-  margin: 40px;
-}
+.soft-skills,
+.T-skills{
+  margin-left: 20%;
+  margin-right: 20%;
 
+}
+.location {
+  color: #fff;
+  text-align: center;
+}
 .Contacts {
   margin-bottom: 50px;
 }
@@ -242,27 +270,21 @@ aside {
   line-height: 27px;
   margin-bottom: 10px;
 }
-.contact-type {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  margin-right: 5px;
-}
+
 .contact-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  color: #a3a3a3;
+  color: #ffffff;
 }
 .contact-link-extra{
     font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-right: 5px;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
 }
 hr {
   border: 0;
@@ -291,7 +313,7 @@ hr {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -299,7 +321,6 @@ hr {
 
 .T-skills {
   padding: 0;
-  margin-left: 40px;
 }
 .T-skills-list {
   color: #ffffff;
@@ -312,16 +333,14 @@ hr {
 .T-skills-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #ffffff;
 }
 
 /*Personal Skills*/ /*Languages*/
 
-.soft-skills {
-  margin: 40px;
-}
+
 .soft-skills-list {
   color: #ffffff;
   padding: 0;
@@ -333,7 +352,7 @@ hr {
 .soft-skills-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #ffffff;
 }
